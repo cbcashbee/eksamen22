@@ -1,0 +1,16 @@
+#title-bag {
+    background-color: #3E4076;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 200px;
+}
+
+.title h1 {
+    color: #ffCCCC;   
+}
+
+.title p {
+    color: #FFEFEF;
+}
