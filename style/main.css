@@ -1,6 +1,6 @@
-/*MAIN STYLES*/
+/*MAIN STYLE*/
 
-/*BODY*/
+  /*BODY*/
   *{
     box-sizing: border-box;
   }
@@ -12,7 +12,7 @@
   body {
     background-color: rgb(255, 228, 228); 
     margin: 0;
-    }
+  }
 
   .space {
     height: 100px;
@@ -21,8 +21,13 @@
   .space2 {
     height: 200px;
   }
-    
-  /*Baggrund*/
+   
+  
+  /*BACKGROUND*/
+  #header-path {
+    display: none;
+  }
+
   #baggrund {
     background-image: url(../img/blomster.png);
     background-repeat: no-repeat;
@@ -36,25 +41,25 @@
   }
 
 
-/*TYPOGRAPHY*/
+  /*TYPOGRAPHY*/
 
     /*Fonts*/
     @font-face {
       font-family: GothamBook;
       src: url(../font/Gotham-Book.ttf);
     }
-    
-  @font-face {
+      
+    @font-face {
       font-family: GothamBookIt;
       src: url(../font/Gotham-BookItalic.ttf);
     }
-    
-  @font-face {
+      
+    @font-face {
       font-family: GothamBlack;
       src: url(../font/Gotham-Black.ttf);
     }
-    
-  @font-face {
+      
+    @font-face {
       font-family: GothamUltra;
       src: url(../font/Gotham-Ultra.ttf);
     }
@@ -62,131 +67,701 @@
     /*Text style*/
     h1 {
       font-family: GothamBlack;
-      font-size: 30px;
-      color: #3E4076;
+      font-size: 8vw;
+      color: #FFCCCC;
       letter-spacing: 5px;
       text-align: center;
     }
-
+    
     h2 {
-      font-family: yeonpilsketch,sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 20px;
-      color: #FFCCCC;
+      font-family: GothamBlack;
+      font-size: 8vw;
+      color: #3E4076;
+      letter-spacing: 5px;
+      text-align: center;
     }
 
     h3 {
       font-family: yeonpilsketch,sans-serif;
       font-weight: 400;
       font-style: normal;
-      font-size: 15px;
-      color: white;
+      font-size: 6vw;
+      color: #FFCCCC;
+    }
+
+    h4 {
+      font-family: yeonpilsketch,sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 5vw;
+      color: #FFCCCC;
+      text-align: center;
+      margin-bottom: -20px;
+    }
+
+    h5 {
+      font-family: yeonpilsketch,sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 8vw;
+      color: #3E4076;
       text-align: center;
     }
 
     p {
       font-family: GothamBook;
-      font-size: 15px;
+      font-size: 4vw;
       color: #292A55;
-
     }
 
     b {
       font-family: GothamBlack;
     }
 
+    .indent {
+      display: block;
+      margin: 20px;
+    }
 
+
+  /*BOXES & SLIDERS*/
+
+    /*Textboxes*/
+    .tekstboks1 {
+      background-color: #FFEFEF;
+      border-radius: 60px;
+      width: 90vw;
+      height: auto;
+      margin: auto;
+      padding: 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tekstboks1 p {
+      margin: auto;
+      margin-bottom: 3vh;
+      text-align: justify;
+      width: 70vw;
+      height: 300px;
+      overflow: scroll;
+    }
+        
+    .tekstboks2 {
+      width: 100vw;
+      height: auto;
+    }
+
+    .tekstboks2 h4 {
+        color: #292A55;
+    }
+
+    .tekstboks2 h2 {
+        color: #FFCCCC;
+    }
+
+    .tekstboks2 p {
+        margin: 8vw;
+        padding-bottom: 10vh;
+        color: #FFEFEF;
+        text-align: justify;
+    }
+
+    .tekstboks1-port {
+      background-color: #FFEFEF;
+      border-radius: 60px;
+      width: 90vw;
+      height: auto;
+      margin: auto;
+      padding: 5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 5vh;
+    }
+
+    .tekstboks1-port p {
+      margin: auto;
+      margin-bottom: 3vh;
+      text-align: justify;
+      width: 70vw;
+      height: 300px;
+      overflow: scroll;
+      overflow: auto;
+      height: auto;
+    }
+    
+    /*Sliders*/
+    .slider {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      overflow: scroll;
+    }
+
+    .slider li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .slid-img {
+      background-color:#FFEFEF;
+      background-size: cover;
+      border-style: none;
+      border-radius: 50%;
+      width: 75vw;
+      height: 75vw;
+      margin: 10vw;
+    }
+
+    .slid-img:hover {
+      background-color: white;
+    }
+
+    .slider-port {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      overflow: scroll;
+      width: 75vw;
+    }
 
   /*HEADER*/    
-      header {
-        background-color: #ffcccc80;
-        position: sticky; 
-        backdrop-filter: blur(8px); 
-        -webkit-backdrop-filter: blur(8px);
+  header {
+    background-color: #ffcccc80;
+    position: sticky; 
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
 
-        border-style: none;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
+    border-style: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 
-        width: 100vw;
-        height: 120px;
-        top: 0;
-        padding: 50px 5vw;
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    padding: 50px 5vw;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      } 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } 
 
-      /*Logo*/
-      .logo {
-          display: inline-flex;
-          align-items: center;
-      }
+    /*Logo*/
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
 
+    #logo-bee {
+      width: 20vw;
+    }
+
+    #logo-text {
+      width: 50vw;
+    }
+
+    /*Navigation*/
+    nav {
+      display: none;
+    }
+
+    /*Burger*/
+    #burger {
+      width: 10vw;
+    }
+
+  /*CONTACT*/ 
+  #contact {
+    background: #3E4076;
+    border-radius: 60px;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact-por {
+    width: 90vw;
+    height: auto;
+    padding: 5vh 15vw;
+    border-radius: 50%;
+  }
+
+  #contact h2 {
+    color: #FFCCCC;
+    font-size: 6vw;
+  }
+
+  #contact p {
+    color: #FFEFEF;
+    margin: auto;
+    margin-bottom: 5vh;
+    width: 65vw;
+    height: auto;
+  }
+
+
+  /*FOOTER*/
+  footer {
+    background-color: #ffcccc80;
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+
+    border-style: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    width: 100vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  footer p {
+    color: white;
+    font-size: 4vh;
+  }
+
+
+
+
+
+/*PAGES STYLE*/
+
+  /*INDEX*/
+
+    /*Quote*/
+    #citat {
+    text-align: center;
+    color: #3E4076;
+    font-family: GothamBlack;
+    font-size: 6vw;
+    margin: 5vw;
+    }
+
+    cite {
+    font-family: yeonpilsketch,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vw;
+    }
+
+    /*'About me'*/
+    #about-por {
+      width: 100vw;
+      height: auto;
+      padding: 2vh 15vw;
+    }
+
+    /*'Portfolio'*/
+    #portfolio {
+      background-color: #3E4076;
+      padding: 5vh 0vw;
+    }
+  
+    /*'Skills'*/
+    #skills-por {
+      width: 100vw;
+      height: auto;
+      padding: 2vh 10vw;
+    }
+
+
+  /*PORTFOLIO – ALL PAGES*/
+    /*Intro-text*/
+    #intro {
+      background-color: #3E4076;
+      margin-top: -150px;
+      padding: 150px 8vw 30px 8vw;
+      text-align: justify;
+    }
+
+    #intro p {
+      color: #FFEFEF;
+    }
+
+    /*Products*/
+    .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product-circle {
+      background: #FFEFEF;
+      width: 60vw;
+      height: 60vw;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 5vh;
+    }
+
+    .prod-img {
+      width: 75vw;
+    }
+
+  /*PORTFOLIO - DESIGNER*/
+  #buslokal-xd {
+    width: 390px;
+    height:844px;
+  }
+
+  /*PORTFOLIO - DEVELOPER*/
+  #cashbee-css {
+    width: 500px;
+    height: 500px;
+    transform: scale(0.7);
+    background-image: url(../img/products/cashbee-css.png);
+    animation: ani 3s steps(10) infinite;
+  }
+
+  @keyframes ani {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -5000px;
+    }
+  }
+
+
+
+
+
+/*MOBILE*/
+
+  @media screen and (min-width: 400px) { 
+  /*MAIN STYLE - MOBILE*/    
+    
+    /*TYPOGRAPHY*/
+    /*Text style*/
+    h1 {
+      font-size: 6vw;
+    }
+
+    h2{
+      font-size: 6vw;
+    }
+
+    h3 {
+      font-size: 4vw;
+    }
+
+    h4 {
+      font-size: 3vw;
+    }
+
+    h5 {
+      font-size: 5vw;
+    }
+
+    p {
+      font-size: 3vw;
+    }
+
+    /*BOXES & SLIDERS*/
+    /*Textboxes*/
+    .tekstboks2 p {
+      padding-bottom: 5vh;
+    }
+
+    /*Sliders*/
+    .slid-img {
+      width: 35vw;
+      height: 35vw;
+      margin: 5vw;
+    }
+
+    /*HEADER*/
+    /*Logo*/
+    #logo-bee {
+      width: 10vw;
+    }
+
+    #logo-text {
+      width: 35vw;
+    }
+    /*Burger*/
+    #burger {
+      width: 8vw;
+    }
+
+    /*CONTACT*/
+    #contact h2 {
+      font-size: 4vw;
+    }
+
+
+  /*PAGES STYLE - MOBILE*/
+
+    /*INDEX*/
+    /*Quote*/
+    #citat {
+      font-size: 4vw;
+    }
+  
+    cite {
+      font-size: 5vw;
+    }
+
+    /*'Portfolio'*/
+    #portfolio {
+        padding: 6vh 0vh;
+    }
+
+    /*PORTFOLIO - ALL PAGES*/
+    /*Products*/
+    .product-circle {
+      width: 40vw;
+      height: 40vw;
+    }
+
+    .prod-img {
+      width: 350px;
+    }
+  }
+
+
+
+
+
+/*TABLET*/
+
+  @media screen and (min-width: 600px) { 
+  /*MAIN STYLE - TABLET*/    
+    
+    /*TYPOGRAPHY*/
+    /*Text style*/
+    h1 {
+      font-size: 4vw;
+    }
+    
+    h2{
+      font-size: 4vw;
+    }
+
+    h3 {
+      font-size: 3vw;
+    }
+
+    h4 {
+      font-size: 2vw;
+    }
+
+    h5 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2vw;
+    }
+
+    /*BOXES & SLIDERS*/
+    /*Textboxes*/
+    .tekstboks1 {
+      width: 60vw;
+    }
+
+    .tekstboks1 p {
+      width: 50vw;
+    }
+
+    .tekstboks2 p {
+      padding-bottom: 0;
+    }
+
+    /*Sliders*/
+    .slid-img {
+      width: 25vw;
+      height: 25vw;
+      margin: 3vw;
+    }
+
+    /*HEADER*/
+    #header-path {
+      display: flex;
+      clip-path: url(#svg-s);
+      align-self: flex-start;
+      background-color: #ffcccc60; 
+      position: absolute;
+      width: 100vw; 
+      height: 300px; 
+      z-index: -1; 
+      backdrop-filter: blur(8px); 
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    /*Logo*/
       #logo-bee {
-          width: 20vw;
+        width: 5vw;
       }
 
       #logo-text {
-          width: 50vw;
+        width: 20vw;
       }
 
-      /*Navigation*/
-      nav {
-          display: none;
-      }
-      /*Burger*/
-      #burger {
-          width: 40px;
-      }
-
-
-      .contact {
-        background-color: #FFCCCC;
-        border-radius: 60px;
-        width: 85vw;
-        height: auto;
-        margin: auto;
-        padding: 5vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /*Navigation*/
+    nav {
+      display: inline-flex;
+      justify-content: end;
+      align-items: center;
+      flex-basis: 70%;
     }
-  
-/*CONTACT*/
-    .contact p {
-        margin: 8vw;
+
+    nav a {
+      text-decoration: none;
+      color:#3E4076;
+      font-family: GothamUltra;
+      font-size: 2vw;
+      margin: 0vw 2vw;
+    }   
+
+    nav a:hover {
+      transform: scale(1.2);
+    }
+    /*'Contact me!' button*/
+    #con-but {
+      background-color: #3E4076;
+      padding: 2vh 4vh 2vh 4vh;
+      border-radius: 40px;
+      color: white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    #con-but:hover {
+      transform: scale(1.2);
+    }
+
+    /*Burger*/
+    #burger {
+      display: none;
+    }
+
+    /*CONTACT*/
+    #contact {
+      background: #3E4076;
+      border-radius: 60px;
+      width: 70vw;
+      padding: 0;  
+    }
+
+    #contact-por{
+      width: 60vw;
+    }
+
+    #contact h2 {
+      font-size: 3vw;
+    }
+
+    #contact p {
+      width: 45vw;
+    }
+
+  /*PAGES STYLE - TABLET*/
+
+    /*INDEX*/
+    /*Quote*/
+    #citat {
+      font-size: 3vw;
+    }
+
+    cite {
+      font-size: 3vw;
+    }
+
+    /*'About me'*/
+    #about-me {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 2vh 5vw;
+    }
+
+    #about-por {
+      width: 30vw;
+      padding: 2vw;
+    }
+
+    /*'Skills'*/
+    #skills {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 2vh 5vw;
+    }
+
+    #skills-por {
+      width: 30vw;
+      padding: 2vw;
     }
     
-    #con-por {
-        border-style: none;
-        border-radius: 50%;
-        width: 90vw;
-    }
-    
-    .contact h1 {
-        font-size: 20px;
-    }
-
-/*FOOTER*/
-      footer {
-        background-color: #ffcccc80;
-        backdrop-filter: blur(8px); 
-        -webkit-backdrop-filter: blur(8px);
-
-        border-style: none;
-        border-top-left-radius: 30px;
-        border-top-right-radius: 30px;
-
-        width: 100vw;
-        height: 120px;
-
-        font-family: GothamBook;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        padding-bottom: 1vh;
+    /*PORTFOLIO - ALL PAGES*/
+    /*Products*/
+    .product-circle {
+      width: 30vw;
+      height: 30vw;
       }
+}
+
+
+
+
+
+/*DESKTOP 1*/
+
+  @media screen and (min-width: 800px) { 
+  /*MAIN STYLE - DESKTOP 1*/
+
+    /*HEADER*/
+    #header-path {
+      height: 375px;
+      clip-path: url(#svg-m);
+    }
+  }
+
+
+
+
+
+/*DESKTOP 2*/
+
+  @media screen and (min-width: 1000px) { 
+  /*MAIN STYLE - DESKTOP 2*/
+
+    /*HEADER*/
+    #header-path {
+      height: 750px;
+      clip-path: url(#svg-l);
+    }
+  }
+
+
+
+
+
+/*DESKTOP 3*/
+@media screen and (min-width: 2000px) { 
+/*MAIN STYLE - DESKTOP 2*/
+
+  /*HEADER*/
+  #header-path {
+    height: 1134px;
+    clip-path: url(#svg-xl);
+  }
+}

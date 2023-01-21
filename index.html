@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--H! kan kun bruges én gang på siden!!-->
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Cecilie Bobjerg Cashbees multimediedesigner portfolie"/>
+        <meta name="description" content="Cecilie Bobjerg Cashbees multimediedesigner portfolie">
 
         <title>Frontpage | Cashbee Multimedia Designer</title>
 
        <link rel="stylesheet" href="style/main.css">
-       <link rel="stylesheet" href="style/index.css">
 
        <script>          /*Font yoenpilsketch – Copy/pasted from Adobe Fonts*/
         (function(d) {
@@ -28,22 +28,25 @@
     <body>
         <!--Baggrund-->
         <div id="baggrund"></div>
+        <div id="header-path"></div>
+        
 
         <!--HEADER-->
         <header>        
             <!--Logo-->
-            <a class="logo" href="#"><img id="logo-bee" src="img/logo-bee.png"><img id="logo-text" src="img/logo.png"></a>
+            <a class="logo" href="#"><img id="logo-bee" src="img/logo-bee.png" alt="Cashbee.dk logo"><img id="logo-text" src="img/logo.png" alt="Cashbee.dk logo text"></a>
+            <!--Burger-->
+            <a href="pages/burger.html"><img id="burger" src="img/burger.png" alt="Burger navigation"></a>
             <!--Navigation-->
             <nav>
                 <a href="#about-me">About me</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#skills">Skills</a>
-                <a id="con-but" href="#contact">Contact</a>
+                <a id="con-but" href="#contact">Contact me!</a>
             </nav>
-            <!--Burger-->
-            <img id="burger" src="img/burger.png"/>   
         </header>
 
+        <!--INDHOLD-->
         <main>
             <!--Citat-->
             <p id="citat"><cite>“That brain of mine is something more than merely mortal; as time will show.” </cite> <br><br>– Ada Lovelace</p>
@@ -52,10 +55,10 @@
 
             <!--About me-->
             <section id="about-me">
-                <img class="portraet" src="img/about-me-edit.png">
+                <img id="about-por" src="img/about-me-edit.png" alt="Portrait">
                 <div class="tekstboks1">
-                    <h3>About me</h3>
-                    <h1>The Future of Frontend</h1>
+                    <h4>About me</h4>
+                    <h2>The Future of Frontend</h2>
                     <p>Half of the world’s population is female, yet the tech-industry is only consisting of 26.7% women in the field. 
                         This is where I want to be a change: 
                         <br><br>
@@ -74,30 +77,31 @@
             <!--Portfolio-->
             <section id="portfolio">
                 <div class="tekstboks2">
-                    <h3>Portfolio</h3>
-                    <h1>Creations and Products</h1>
-                    <p>In this section, you will find some of my creations and products. 
-                       Due to the fact, that I am a student, my portfolio is yet to be filled, with more material in the future:</p>
+                    <h4>Portfolio</h4>
+                    <h2>Creations and Products</h2>
+                    <p>In this section, you will find some of my creations and products.<br><br>
+                        The two categories Designer and Developer is directly aimed at showcasing products, related to the frontend industry, while the latter, Illustrations and Photography, is to showcase my content creation skills for the frontend-end industry. <i>Due to the fact, that I am a student, my portfolio is yet to be filled, with some more material in the future:</i>
+                        </p>
                     <!--Slider-->
                     <ul class="slider">
-                        <li><h2>Designer</h2>
+                        <li><h3>Designer</h3>
                             <a href="pages/designer.html">
-                                <div class="slid-img"></div>
+                                <img class="slid-img" src="img/slider/des-port.png" alt="Designer portfolio page">
                             </a>
                         </li>
-                        <li><h2>Developer</h2>
+                        <li><h3>Developer</h3>
                             <a href="pages/developer.html">
-                                <div class="slid-img"></div>
+                                <img class="slid-img" src="img/slider/dev-port.png" alt="Developer portfolio page">
                             </a>
                         </li>
-                        <li><h2>Illustrations</h2>
+                        <li><h3>Illustrations</h3>
                             <a href="pages/illustrations.html">
-                                <div class="slid-img"></div>
+                                <img class="slid-img" src="img/slider/ill-port.png" alt="Illustrations portfolio page">
                             </a>
                         </li>
-                        <li><h2>Photography</h2>
+                        <li><h3>Photography</h3>
                             <a href="pages/photography.html">
-                                <div class="slid-img"></div>
+                                <img class="slid-img" src="img/slider/pho-port.png" alt="Photography portfolio page">
                             </a>
                         </li>
                     </ul>
@@ -109,29 +113,86 @@
             <!--Skills-->
             <section id="skills">
                 <div class="tekstboks1">
-                    <h3>Skills</h3>
-                    <h1>Abilities and Knowledge</h1>
-                    <p>Bobbedebob, bob bob bobbedibobbob</p>
+                    <h4>Skills</h4>
+                    <h2>Abilities and Knowledge</h2>
+                    <p><b>Programs and software</b><br>
+                    Through my education I have gotten family with a bunch of programs in Adobe’s Creative Cloud, HTML and CSS, as well as other useful programs: <br><br>
+                    
+                    <span class="indent">
+                        <b>Creative</b><br>
+                        The programs I am most familiar with is Illustrator, Photoshop and Xd. Furthermore, I use a Wacom-tablet. Other than that, I do have basic knowledge of InDesign and a little of Lightroom Classic.<br><br>
+                        <b>Development</b><br>
+                        As a first-timer with coding, I will rate myself as pretty good at HTML5 and CSS3, compared to that I just learned it. I am using Visual Studio Code as my preferred IDE. For CMS-systems I have basic knowledge of WordPress. Other software that I have a little knowledge about is FileZilla, CodePen and GitHub.<br><br>
+                    </span>
+                    
+                    <b>Education</b><br>
+                    As mentioned, I am studying to become a multimedia designer. However, I would like to mention, that do have some knowledge from previous education. The most relevant classes include marketing, business economics, visual merchandising, entrepreneurship, and rhetoric. For languages, I am fluent in Danish, as it is my first language, close to fluent in English, and knows the basics of French – grammatically better, than spoken.
+                    </p>
                 </div>
-                <div>
-                    <img class="portraet" src="img/skills-edit.png">
-                    <!--<img class="portraet" src="img/skills-frame.png">-->
-                </div>
+                
+                <img id="skills-por" src="img/skills-edit.png" alt="Portrait">
             </section>
 
             <div class="space2"></div>
 
             <section id="contact">
-                <img class="portraet" id="con-por" src="img/portraet.jpg" alt="portrait">
-                <h1>Cecilie Bobjerg Cashbee</h1>
-                <p><b>E-mail: </b>sillebobjerg@hotmail.com
-                <br><b>Mobile: </b>+45 29 17 93 33</p>
+                <img id="contact-por" src="img/portraet.jpg" alt="portrait">
+                <h2>Cecilie Bobjerg Cashbee</h2>
+                <p>
+                    <b>E-mail:</b><br> sillebobjerg@hotmail.com<br><br>
+                    <b>Mobile:</b><br> +45 29 17 93 33
+                </p>
             </section>
 
             <div class="space"></div>
         </main>
         
         <footer>
-            © 2022 Cecilie Bobjerg Cashbee
+            <p>© 2022 Cecilie Bobjerg Cashbee</p>
         </footer>
+
+        <!-- 600px – SVG-kode fra Adobe Illustrator-->
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svg-s">
+                    <path class="st0" d="M0,0l0.4,174c0,0,52.4-45.3,133.8-50.4C251.7,116.1,346.5,271.4,546,298c130.7,17.4,254-86.3,254-86.3L799.3,0
+	                H0z"/>  
+                </clipPath>
+            </defs>
+        </svg>
+        
+        <!-- 800px – SVG-kode fra Adobe Illustrator-->
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svg-m">
+                    <path class="st0" d="M0,0l0.5,217.5c0,0,65.5-56.6,167.3-63.1c146.8-9.3,265.3,184.8,514.7,218.1C845.9,394.3,1000,264.7,1000,264.7
+	                L999.2,0H0z"/>
+                </clipPath>
+            </defs>
+        </svg>
+
+        <!-- 1000px – SVG-kode fra Adobe Illustrator-->
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svg-l">
+                    <path class="st0" d="M0,0l1,435c0,0,131-113.2,334.6-126.1C629.2,290.2,866.2,678.5,1365,745.1c326.8,43.6,635-215.6,635-215.6
+	                L1998.3,0H0z"/>
+                </clipPath>
+            </defs>
+        </svg>
+
+        <!-- 2000px – SVG-kode fra Adobe Illustrator-->
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svg-xl">
+                    <path class="st0" d="M0,0l1.5,652.5c0,0,196.5-169.8,501.9-189.1c440.4-28,795.9,554.4,1544.1,654.3
+	                C2537.7,1183,3000,794.2,3000,794.2L2997.5,0H0z"/>
+                </clipPath>
+            </defs>
+        </svg>
+
     </body>
+    
+    </html>
+
+    

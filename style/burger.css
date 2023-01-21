@@ -1,0 +1,88 @@
+/*BURGER MENU*/
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #3E4076; 
+    margin: 0;
+  }
+  
+  header {
+    background-color: #3E4076;
+    position: sticky; 
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    padding: 50px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*Logo*/
+    .logo {
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    #logo-bee {
+      width: 20vw;
+    }
+
+    #logo-text {
+      width: 50vw;
+    }
+
+  /*Burger*/
+    #burger {
+      width: 10vw;
+    }
+
+  /*Navigation*/
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color:white;
+      font-family: GothamUltra;
+      font-size: 30px;
+      padding: 40px;
+    }   
+    
+    #portfolio-nav {
+      margin-top: -30px;
+      margin-bottom: 20px;
+    }
+    
+    #portfolio-nav a {
+      font-family: GothamBook;
+      font-size: 20px;
+      padding: 5px;
+    }
+
+    #con-but {
+      background-color: #FFCCCC;
+      padding: 2vh 4vh 2vh 4vh;
+      margin: 20px 0px;
+      border-radius: 40px;
+      color: white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    /*Fonts*/
+    @font-face {
+      font-family: GothamUltra;
+      src: url(../font/Gotham-Ultra.ttf);
+    }
+
+    @font-face {
+      font-family: GothamBook;
+      src: url(../font/Gotham-Book.ttf);
+    }

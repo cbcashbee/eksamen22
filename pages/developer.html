@@ -5,12 +5,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Cecilie Bobjerg Cashbees multimediedesigner portfolie"/>
+        <meta name="description" content="Cecilie Bobjerg Cashbees multimediedesigner portfolie">
 
-        <title>Portfolio – Developer | Cashbee Multimedia Designer</title>
+        <title>Portfolio | Developer | Cashbee Multimedia Designer</title>
 
        <link rel="stylesheet" href="../style/main.css">
-       <link rel="stylesheet" href="../style/dev.css">
 
        <script>          /*Font yoenpilsketch – Copy/pasted from Adobe Fonts*/
         (function(d) {
@@ -28,36 +27,110 @@
     <body>
         <!--Baggrund-->
         <div id="baggrund"></div>
-        <div id="title-bag"></div>
-        
 
         <!--HEADER-->
         <header>        
             <!--Logo-->
-            <a class="logo" href="#"><img id="logo-bee" src="../img/logo-bee.png"><img id="logo-text" src="../img/logo.png"></a>
+            <a class="logo" href="../index.html"><img id="logo-bee" src="../img/logo-bee.png" alt="Cashbee.dk logo"><img id="logo-text" src="../img/logo.png" alt="Cashbee.dk logo text"></a>
+            <!--Burger-->
+            <a href="burger.html"><img id="burger" src="../img/burger.png" alt="Burger navigation"></a>
             <!--Navigation-->
             <nav>
-                <a href="#about-me">About me</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#skills">Skills</a>
-                <a id="con-but" href="#contact">Contact</a>
+                <a href="../index.html#about-me">About me</a>
+                <a href="../index.html#portfolio">Portfolio</a>
+                <a href="../index.html#skills">Skills</a>
+                <a id="con-but" href="#contact">Contact me!</a>
             </nav>
-            <!--Burger-->
-            <img id="burger" src="../img/burger.png"/>   
         </header>
 
+        <!--INDHOLD-->
         <main>
-            <section class="title">
+            
+            <!--Intro-->
+            <div id="intro">
                 <h1>Developer</h1>
-                <p>On this site, you will find products based on frontend-developing.
-                    <br>
-                    Since this website is my first real project with HTML and CSS, the amount of material is at a minimum.
+               <p>On this page you will find products with mind on frontend development, meaning primarily coding. This will include material like CSS-animations and showcasing of HTML.<br><br>
+                <i>(NB: CodePens works best on desktop)</i><br><br>
+                Since this website is my first <i>real</i> project with HTML and CSS, the amount of material is at a minimum, as of right now.</p>
+                </div>
+
+            <!--Moving figures-->
+            <section class="product">
+                <div class="product-circle">
+                    <h4>CSS-animation</h4>
+                    <h5>Moving figures</h5>
+                </div>
+                
+                <div class="tekstboks1-port">
+                    <p><b>About the product</b><br>
+                    My first attempt at CSS-animation, learning about keyframes and animation-propeties. Enjoy!<br><br></p>
+                    
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNMNaKV" data-user="Cecilie-Bobjerg-Cashbee" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cecilie-Bobjerg-Cashbee/pen/oNMNaKV">
+                        Moving boxes</a> by Cecilie Bobjerg Cashbee (<a href="https://codepen.io/Cecilie-Bobjerg-Cashbee">@Cecilie-Bobjerg-Cashbee</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    
+                    </div>
+            </section>
+
+            <div class="space"></div>
+
+            <!--Cashbee animation-->
+            <section class="product">
+                <div class="product-circle">
+                    <h4>CSS-animation</h4>
+                    <h5>Cashbee in colour</h5>
+                </div>
+                
+                <div class="tekstboks1-port">
+                    <p><b>About the product</b><br>
+                    We had a workshop where we made some sprite-animations with CSS. This is the result from that day - however, it does have some small defects.</p>
+                    <div id="cashbee-css"></div>
+                </div>
+            </section>
+
+            <div class="space"></div>
+
+            <!--Cashbee.dk-->
+            <section class="product">
+                <div class="product-circle">
+                    <h4>HTML-inline style</h4>
+                    <h5>Profile layout on gSm</h5>
+                </div>
+                
+                <div class="tekstboks1-port">
+                    <p><b>About the product</b><br>
+                    The online community goSupermodel is back in business, and for nostalgia I joined the site again - and discovered the profiles are based on HTML. Since the site was last active in 2016, lot of the code is outdated, and (if I am not wrong) it is running on HTML4. Besides that, it is not possible to add any external CSS.<br><br>As I have been learning HTML5, and I never really have used other than external CSS, I took this as a challenge. I wanted to get better at, and have a better understanding of HTML in general.</p>
+
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYjgZre" data-user="Cecilie-Bobjerg-Cashbee" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Cecilie-Bobjerg-Cashbee/pen/eYjgZre">
+                        Profile gSm</a> by Cecilie Bobjerg Cashbee (<a href="https://codepen.io/Cecilie-Bobjerg-Cashbee">@Cecilie-Bobjerg-Cashbee</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                </div>
+            </section>
+
+            <div class="space2"></div>
+
+            <section id="contact">
+                <img id="contact-por" src="../img/portraet.jpg" alt="portrait">
+                <h2>Cecilie Bobjerg Cashbee</h2>
+                <p>
+                    <b>E-mail:</b><br> sillebobjerg@hotmail.com<br><br>
+                    <b>Mobile:</b><br> +45 29 17 93 33
                 </p>
             </section>
+
+            <div class="space"></div>
         </main>
 
-
-        <footer> 
-            © 2022 Cecilie Bobjerg Cashbee
+        <footer>
+            <p>© 2022 Cecilie Bobjerg Cashbee</p>
         </footer>
     </body>
+    
+    </html>
